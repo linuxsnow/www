@@ -4,7 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://www.linuxsnow.org',
+	site: 'https://linuxsnow.org',
+	base: '/',
 	integrations: [
 		starlight({
 			title: 'SNOW Linux',
