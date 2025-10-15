@@ -4,11 +4,23 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://www.linuxsnow.org',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'SNOW Linux',
+			logo: {
+				src: './src/assets/snow.svg',
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/linuxsnow/snowdesktop' }],
 			sidebar: [
+								{
+					label: 'Editions',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Desktop', slug: 'editions/desktop' },
+						{ label: 'Server', slug: 'editions/server' },
+					],
+				},
 				{
 					label: 'Guides',
 					items: [

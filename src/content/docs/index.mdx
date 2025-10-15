@@ -1,36 +1,54 @@
 ---
-title: Welcome to Starlight
+title: SNOW is Not Only Windows
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Linux for Developers
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/snow.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Snow Editions
+      link: /editions/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Installation Guide
+      link: installation
+      icon: download
       variant: minimal
 ---
 
+
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Why Choose SNOW?
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="Immutable /usr" icon="seti:folder">
+		You won't need to pave your system every 6 months.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Stable Debian Base" icon="seti:shell">
+		Solid, proven, and reliable base system.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Containers and Virtualization" icon="seti:config">
+		Incus, Docker, Podman and QEMU support out of the box.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Built for Developers" icon="seti:html">
+		Develop anything in containers or virtual machines, or on the host using homebrew, snaps, flatpaks or systemd-sysexts.
+	</Card>
+</CardGrid>
+
+## Why Skip SNOW?
+
+<CardGrid>
+	<Card title="Immutable /usr" icon="seti:folder">
+		If you can't see around `apt-get` and `dnf` to install packages, SNOW is not for you.
+	</Card>
+	<Card title="Stable Debian Base" icon="seti:shell">
+		If you need bleeding edge software, you'll have to put it in a container or VM. *We protect you from the cuts.*
+	</Card>
+	<Card title="Containers and Virtualization" icon="seti:config">
+		If your whole system is a pet, SNOW is not for you.
+	</Card>
+	<Card title="Built for Developers" icon="seti:html">
+		You might have to get your hands dirty to do complex things. The good news is, SNOW has you covered. You can't break the base.
 	</Card>
 </CardGrid>
